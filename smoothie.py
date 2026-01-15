@@ -21,6 +21,8 @@ def smoothie(ingredients: list[str], base: str = "water", ice: bool = True) -> s
 
     if not all(isinstance(i, str) for i in ingredients):
         return "I don't know how to make that smoothie!"
+    
+    # Comment
 
     unique_ingredients = sorted(set(ingredient.strip().lower() for ingredient in ingredients))
 
